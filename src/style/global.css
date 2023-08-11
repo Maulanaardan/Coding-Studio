@@ -129,4 +129,33 @@ section::before {
   content: "Software Service";
 }
 
+.contact::before {
+  content: "Contact";
+}
 
+.icon {
+  display: inline-block;
+}
+
+.icon::after {
+  content: "";
+  margin-left: 10px;
+}
+
+#instagram::after {
+  content: "Instagram";
+}
+
+#facebook::after {
+  content: "Facebook";
+}
+
+#twitter::after {
+  content: "Twitter";
+}
+
+.form-input {
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 30px 15px;
+}
