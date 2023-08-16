@@ -5,7 +5,7 @@
   50% {
     transform: translateY(5px);
   }
-   100% {
+  100% {
     transform: translateY(0);
   }
 }
@@ -20,7 +20,8 @@
   transition: 300ms;
 }
 
-.btn:hover, .btn.active {
+.btn:hover,
+.btn.active {
   border: 3px solid black;
   background-color: black;
   color: white;
@@ -50,8 +51,12 @@ section::before {
   font-size: 63px;
 }
 
+.home img {
+  width: 80%;
+}
+
 .arrow img {
-  height: 50px;
+  width: 15%;
   animation: 2s arrow infinite;
 }
 
@@ -63,7 +68,7 @@ section::before {
   display: flex;
   justify-content: space-between;
   align-items: center;
- margin-top: 30px;
+  margin-top: 30px;
 }
 
 .about-exp-detail {
@@ -71,7 +76,7 @@ section::before {
 }
 
 .work::before {
-  content: "Work"
+  content: "Work";
 }
 
 .work-img {
@@ -158,4 +163,24 @@ section::before {
   border: 1px solid gray;
   border-radius: 10px;
   padding: 30px 15px;
+}
+
+@media only screen and (max-width: 764px) {
+  .home img {
+    width: 50%;
+    height: 50%;
+  }
+
+  .home h3,
+  .home h1 {
+    font-size: 56px;
+  }
+
+  .contact-form {
+    margin-top: 30px;
+  }
+
+  section::before {
+    left: 2px;
+  }
 }

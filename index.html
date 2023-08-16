@@ -20,10 +20,10 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav ms-auto">
-            <a class="nav-link text-black">Home</a>
-            <a class="nav-link text-black" href="#">About Me</a>
-            <a class="nav-link text-black" href="#">Certifiaction</a>
-            <a class="nav-link text-black" href="#">skill</a>
+            <a class="nav-link text-black" href="#home">Home</a>
+            <a class="nav-link text-black" href="#about">About Me</a>
+            <a class="nav-link text-black" href="#work">Work</a>
+            <a class="nav-link text-black" href="#contact">contact</a>
           </div>
         </div>
       </div>
@@ -32,21 +32,24 @@
 
     <!-- body -->
     <section id="home" class="home container">
-      <div class="row d-flex align-items-center">
-        <div class="col-8">
+      <div class="row d-flex align-items-center flex-md-row flex-column-reverse">
+        <div class="col-12 col-md-7">
           <h3 class="fw-semibold">Hello I am</h3>
           <h1 class="fw-bold">Maulana Luthfi</h1>
           <p>As a Web Developer Based On Indonesia</p>
           <a class="btn" href="./src/assets/LOGO.jpg" download>Resume</a>
         </div>
-        <div class="col-4">
-          <img src="./src/assets/potrait.png" style="height: 280px" />
+        <div class="col-12 col-md-5 d-flex justify-content-md-end justify-content-center">
+          <img src="./src/assets/potrait.png"/>
         </div>
       </div>
-      <div class="arrow d-flex align-items-center flex-column mt-5">
-        <a href="about" class="text-decoration-none text-dark">More Info</a>
+
+      <a href="#about" class="text-decoration-none text-dark">
+        <div class="arrow d-flex align-items-center flex-column mt-5">
+        <p>More Info</p>
         <img src="./src/assets/kisspng-arrow-computer-icons-bottom-5abd2c8b1920f4.8180638815223471471029-removebg-preview.png" />
       </div>
+    </a>
     </section>
     <!-- body end -->
 
@@ -106,13 +109,13 @@
     <!-- work start -->
     <section id="work" class="work container">
       <div class="row d-flex align-items-center gap-5">
-        <div class="col d-flex align-items-center">
+        <div class="col-12 col-md d-flex align-items-center">
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa et atque adipisci deleniti hic illo minima distinctio ratione laudantium quibusdam exercitationem, perferendis repellat aspernatur maxime placeat nemo iste totam
             inventore sed qui asperiores. Soluta maxime numquam aliquid ducimus nostrum modi tenetur, eaque provident, vitae nesciunt ipsum, similique enim adipisci quibusdam!
           </p>
         </div>
-        <div class="col work-img">
+        <div class="col-12 col-md work-img">
           <div class="work-img-list" id="work1">
             <img src="./src/assets/work-1.png" id="work1" />
           </div>
@@ -130,34 +133,34 @@
     <!-- contact start -->
     <section id="contact" class="contact container">
       <div class="row">
-        <div class="col">
+        <div class="col-12 col-md">
           <div class="p">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, eligendi ab voluptatum voluptatibus voluptas voluptates culpa ducimus expedita alias quo consequuntur dolorem odit nisi delectus similique debitis tenetur quos
             aperiam, nemo explicabo quidem officiis quia reiciendis ullam! Deleniti quam ad nostrum qui nulla soluta et asperiores aperiam? Quis, qui distinctio.
           </div>
           <div class="row">
-            <div class="col d-flex justify-content-evenly mt-4">
+            <div class="col-12 col-md d-flex justify-content-evenly contact-form">
               <div class="icon" id="instagram"><i data-feather="instagram"></i></div>
               <div class="icon" id="facebook"><i data-feather="facebook"></i></div>
               <div class="icon" id="twitter"><i data-feather="twitter"></i></div>
             </div>
           </div>
         </div>
-        <div class="col form-input mb-5">
-          <form>
+        <div class="col form-input mb-5 fw-bold contact-form">
+          <form onsubmit="formSubmit(event)">
             <div class="mb-3">
               <label for="inputEmail" class="form-label">Email address</label>
               <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp">
             </div>
             <div class="mb-3">
-              <label for="inputPassword" class="form-label">Password</label>
-              <input type="password" class="form-control" id="inputPassword">
+              <label for="inputSubject" class="form-label">Subject</label>
+              <input type="text" class="form-control" id="inputSubject">
             </div>
-            <div class="mb-3 form-check">
-              <input type="checkbox" class="form-check-input" id="checkForm">
-              <label class="form-check-label" for="checkForm">Check me out</label>
+            <div class="mb-3">
+              <label for="inputMessage" class="form-label">Message</label>
+              <input type="text" class="form-control" id="inputMessage">
             </div>
-            <button type="submit" class="btn button">Submit</button>
+            <button type="submit" class="btn button submit">Submit</button>
           </form>
         </div>
       </div>
